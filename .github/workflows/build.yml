@@ -19,7 +19,7 @@ jobs:
       - name: Build with PyInstaller
         run: |
           # --onefile で1つのexeにまとめ、--noconsole で黒い画面を消す
-          pyinstaller --noconsole --onefile main.py
+          pyinstaller --noconsole --onefile pdfrepl.py
           
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
